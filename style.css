@@ -138,7 +138,7 @@ section {
 * work
 * * * * * * * * */
 .work__contents {
-  height: 1600px;
+  height: 1680px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -163,4 +163,32 @@ section {
 }
 .work__content__heading {
   font-size: 24px;
+}
+.work__content__text {
+  letter-spacing: 1.5px;
+}
+
+/* * * * * * * * *
+* florist
+* * * * * * * * */
+.florist {
+  background: linear-gradient(#ededed 50%, #fff 50%);
+}
+.florist__persons {
+  display: flex;
+  justify-content: space-between;
+}
+.florist__person {
+  width: 300px;
+  text-align: left;
+  line-height: 1.8;
+}
+.florist__person__image {
+  margin-bottom: 8px;
+}
+.florist__person__name {
+  font-size: 24px;
+}
+.florist__person__introduce {
+  letter-spacing: 1.5px;
 }
