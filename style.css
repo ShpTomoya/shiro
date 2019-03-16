@@ -6,7 +6,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-h1, p {
+h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -40,7 +40,7 @@ section {
 .u-heading {
   position: relative;
   display: inline-block;
-  margin: 0 0 32px;
+  margin-bottom: 32px;
   padding-bottom: 24px;
   font-size: 36px;
   letter-spacing: 2px;
@@ -55,7 +55,7 @@ section {
 }
 .u-text {
   margin-bottom: 64px;
-  line-height: 1.9;
+  line-height: 1.8;
   letter-spacing: 1.4px;
 }
 
@@ -131,12 +131,36 @@ section {
 * concept
 * * * * * * * * */
 .concept {
-  background: linear-gradient(#fff 68%, #ededed 32%);
+  background: linear-gradient(#fff 70%, #ededed 30%);
 }
 
 /* * * * * * * * *
 * work
 * * * * * * * * */
-.work {
-  /* height: 876px; */
+.work__contents {
+  height: 1600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.work__content {
+  width: 420px;
+  margin-bottom: 80px;
+  text-align: left;
+  line-height: 1.8;
+}
+.work__content:nth-of-type(1) {order: 1;}
+.work__content:nth-of-type(2) {
+  order: 3;
+  margin-top: 120px;
+}
+.work__content:nth-of-type(3) {order: 2;}
+.work__content:nth-of-type(4) {order: 4;}
+
+.work__content__image {
+  margin-bottom: 16px;
+}
+.work__content__heading {
+  font-size: 24px;
 }
