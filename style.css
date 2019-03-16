@@ -34,6 +34,9 @@ section {
 .u-py96 {
   padding: 96px 0;
 }
+.u-pt96 {
+  padding-top: 96px;
+}
 .u-heading {
   position: relative;
   display: inline-block;
@@ -51,7 +54,7 @@ section {
   border-bottom: 1px solid;
 }
 .u-text {
-  margin-bottom: 70px;
+  margin-bottom: 64px;
   line-height: 1.9;
   letter-spacing: 1.4px;
 }
@@ -128,12 +131,11 @@ section {
 * concept
 * * * * * * * * */
 .concept {
-  height: 876px;
   background: linear-gradient(#fff 68%, #ededed 32%);
 }
 
 /* * * * * * * * *
-* concept
+* work
 * * * * * * * * */
 .work {
   /* height: 876px; */
