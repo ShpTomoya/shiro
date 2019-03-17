@@ -73,7 +73,7 @@ section, footer {
 .header {
   height: 620px;
   padding-top: 40px;
-  background: url('img/header.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/header.png');
   background-size: cover;
   color: #fff;
   text-align: center;
