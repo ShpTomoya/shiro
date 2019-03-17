@@ -82,11 +82,8 @@ section, footer {
 .header__nav {
   position: absolute;
   top: 40px;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   line-height: 64px;
-  padding: 0 240px;
 }
 .header__nav.top-change {
   position: fixed;
@@ -98,6 +95,10 @@ section, footer {
   background-color: #fff;
   border-bottom: 1px solid #a0a0a0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.header__nav .u-content {
+  display: flex;
+  justify-content: space-between;
 }
 .header__nav__logo {
   font-size: 36px;
