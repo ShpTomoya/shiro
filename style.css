@@ -267,3 +267,43 @@ section, footer {
   line-height: 96px;
   letter-spacing: 1.4px;
 }
+
+/* * * * * * * * *
+* レスポンシブ対応
+* * * * * * * * */
+@media (max-width: 670px) {
+  .u-content {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+
+  .header__nav__logo {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .concept__image {
+    width: 100%;
+  }
+  .work__contents {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  .work__content__image {
+    width: 100vw;
+  }
+  .work__content__text {
+    width: 100vw;
+  }
+  .florist__persons {
+    display: block;
+  }
+  .shopInformation__contents {
+    display: block;
+    margin-bottom: 180px;
+  }
+  .shopInformation__image {
+    width: 100%;
+  }
+}
