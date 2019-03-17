@@ -27,7 +27,7 @@ a {
   color: #333;
   text-decoration: none;
 }
-section {
+section, footer {
   text-align: center;
 }
 
@@ -219,4 +219,50 @@ section {
 .shopInformation__table__heading {
   width: 100px;
   border-right: 1px solid #a0a0a0;
+}
+
+/* * * * * * * * *
+* Contact us
+* * * * * * * * */
+.contactUs {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('img/contact_us.png');
+  background-size: cover;
+}
+.btn__contact {
+  position: relative;
+  width: 360px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  border-color: #a0a0a0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn__contact::before,
+.btn__contact::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  border-radius: 2px;
+}
+.btn__contact::before {
+  top: 30px;
+  left: 60px;
+  width: 30px;
+  border: 1px solid #2b2b2b;
+}
+.btn__contact::after {
+  top: 21px;
+  left: 65px;
+  width: 20px;
+  border-right: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+  transform: rotate(45deg);
+}
+
+/* * * * * * * * *
+* Contact us
+* * * * * * * * */
+.copyright {
+  line-height: 96px;
+  letter-spacing: 1.4px;
 }
