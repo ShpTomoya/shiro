@@ -71,6 +71,7 @@ section, footer {
 * header
 * * * * * * * * */
 .header {
+  position: relative;
   height: 620px;
   padding-top: 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/header.png');
@@ -79,15 +80,31 @@ section, footer {
   text-align: center;
 }
 .header__nav {
+  position: absolute;
+  top: 40px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  line-height: 64px;
+  padding: 0 240px;
+}
+.header__nav.top-change {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.header__nav.color-chnage {
+  color: #2b2b2b;
+  background-color: #fff;
+  border-bottom: 1px solid #a0a0a0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .header__nav__logo {
   font-size: 36px;
 }
 .header__nav__menu {
   width: 40px;
-  height: 40px;
+  height: 64px;
   position: relative;
   cursor: pointer;
 }
@@ -104,6 +121,11 @@ section, footer {
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
+.color-chnage .header__nav__menu span,
+.color-chnage .header__nav__menu span::before,
+.color-chnage .header__nav__menu span::after {
+  background: #2b2b2b;
+}
 .header__nav__menu span::before,
 .header__nav__menu span::after {
   content: "";
@@ -118,6 +140,7 @@ section, footer {
   top: calc(50% + 8px);
 }
 .header__title {
+  margin-top: 160px;
   font-size: 120px;
   font-weight: normal;
 }
@@ -279,7 +302,6 @@ section, footer {
 
   .header__nav__logo {
     font-size: 24px;
-    line-height: 40px;
   }
 
   .concept__image {
