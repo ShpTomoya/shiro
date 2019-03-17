@@ -10,6 +10,13 @@ h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
+tbody {
+  vertical-align: inherit;
+}
+th, td {
+  font-weight: normal;
+  padding: 0;
+}
 body {
   font-size: 16px;
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", Osaka, "MS PGothic", arial, helvetica, sans-serif;
@@ -39,7 +46,6 @@ section {
 }
 .u-heading {
   position: relative;
-  display: inline-block;
   margin-bottom: 32px;
   padding-bottom: 24px;
   font-size: 36px;
@@ -47,11 +53,13 @@ section {
 }
 .u-heading::after {
   content: '';
+  width: 40px;
+  height: 1px;
+  background: #2b2b2b;
   position: absolute;
-  right: 40%;
   bottom: 0;
-  left: 40%;
-  border-bottom: 1px solid;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .u-text {
   margin-bottom: 64px;
@@ -128,14 +136,14 @@ section {
 }
 
 /* * * * * * * * *
-* concept
+* Concept
 * * * * * * * * */
 .concept {
   background: linear-gradient(#fff 70%, #ededed 30%);
 }
 
 /* * * * * * * * *
-* work
+* Work
 * * * * * * * * */
 .work__contents {
   height: 1680px;
@@ -169,7 +177,7 @@ section {
 }
 
 /* * * * * * * * *
-* florist
+* Florist
 * * * * * * * * */
 .florist {
   background: linear-gradient(#ededed 50%, #fff 50%);
@@ -191,4 +199,24 @@ section {
 }
 .florist__person__introduce {
   letter-spacing: 1.5px;
+}
+
+/* * * * * * * * *
+* Shop information
+* * * * * * * * */
+.shopInformation__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+}
+.shopInformation__table {
+  border-spacing: 16px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 2;
+}
+.shopInformation__table__heading {
+  width: 100px;
+  border-right: 1px solid #a0a0a0;
 }
