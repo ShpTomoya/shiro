@@ -119,12 +119,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
     $(function() {
-      // スクロールしたら要素を表示する
       $(window).on('scroll', function () {
         if ($(this).scrollTop() > 40) {
-          $('.header__nav').addClass('top-change');
+          $('.header__nav').addClass('position-change');
         } else {
-          $('.header__nav').removeClass('top-change');
+          $('.header__nav').removeClass('position-change');
         }
         if ($(this).scrollTop() > 620) {
           $('.header__nav').addClass('color-chnage');

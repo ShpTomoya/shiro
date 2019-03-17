@@ -85,7 +85,7 @@ section, footer {
   width: 100%;
   line-height: 64px;
 }
-.header__nav.top-change {
+.header__nav.position-change {
   position: fixed;
   top: 0;
   z-index: 100;
