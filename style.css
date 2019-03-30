@@ -6,9 +6,22 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 16px;
+  color: #2b2b2b;
+}
 h1, h2, h3, p {
   margin: 0;
   padding: 0;
+}
+a {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+section {
+  text-align: center;
 }
 tbody {
   vertical-align: inherit;
@@ -17,19 +30,6 @@ th, td {
   font-weight: normal;
   padding: 0;
 }
-body {
-  font-size: 16px;
-  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", Osaka, "MS PGothic", arial, helvetica, sans-serif;
-  color: #2b2b2b;
-  margin: 0;
-}
-a {
-  color: #333;
-  text-decoration: none;
-}
-section, footer {
-  text-align: center;
-}
 
 /* * * * * * * * *
 * utility
@@ -37,12 +37,6 @@ section, footer {
 .u-content {
   max-width: 960px;
   margin: 0 auto;
-}
-.u-py96 {
-  padding: 96px 0;
-}
-.u-pt96 {
-  padding-top: 96px;
 }
 .u-heading {
   position: relative;
@@ -76,8 +70,8 @@ section, footer {
   padding-top: 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/header.png');
   background-size: cover;
-  color: #fff;
   text-align: center;
+  color: #fff;
 }
 .header__nav {
   position: absolute;
@@ -104,19 +98,19 @@ section, footer {
   font-size: 36px;
 }
 .header__nav__menu {
+  position: relative;
   width: 40px;
   height: 64px;
-  position: relative;
   cursor: pointer;
 }
 .header__nav__menu span,
 .header__nav__menu span::before,
 .header__nav__menu span::after {
-  width: 32px;
-  height: 0.7px;
+  position: absolute;
   left: 50%;
   display: block;
-  position: absolute;
+  width: 32px;
+  height: 0.7px;
   background: #fff;
   transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -163,18 +157,22 @@ section, footer {
 * Concept
 * * * * * * * * */
 .concept {
+  padding: 96px 0;
   background: linear-gradient(#fff 70%, #ededed 30%);
 }
 
 /* * * * * * * * *
 * Work
 * * * * * * * * */
+.work {
+  padding-top: 96px;
+}
 .work__contents {
-  height: 1680px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
+  height: 1680px;
 }
 .work__content {
   width: 420px;
@@ -204,6 +202,7 @@ section, footer {
 * Florist
 * * * * * * * * */
 .florist {
+  padding: 96px 0;
   background: linear-gradient(#ededed 50%, #fff 50%);
 }
 .florist__persons {
@@ -228,6 +227,9 @@ section, footer {
 /* * * * * * * * *
 * Shop information
 * * * * * * * * */
+.shopInformation {
+  padding-top: 96px;
+}
 .shopInformation__contents {
   display: flex;
   justify-content: space-between;
@@ -249,18 +251,20 @@ section, footer {
 * Contact us
 * * * * * * * * */
 .contactUs {
+  padding: 96px 0;
   background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('img/contact_us.png');
   background-size: cover;
 }
 .btn__contact {
   position: relative;
+  display: inline-block;
   width: 360px;
-  padding: 0 0 0 40px;
+  padding-left: 40px;
   line-height: 80px;
   letter-spacing: 2px;
-  border-color: #a0a0a0;
+  border: 1px solid #a0a0a0;
+  background: #fff;
   font-size: 20px;
-  cursor: pointer;
 }
 .btn__contact::before,
 .btn__contact::after {
@@ -286,10 +290,13 @@ section, footer {
 }
 
 /* * * * * * * * *
-* Contact us
+* footer
 * * * * * * * * */
-.copyright {
-  line-height: 96px;
+.footer {
+  text-align: center;
+}
+.footer__copyright {
+  line-height: 40px;
   letter-spacing: 1.4px;
 }
 
