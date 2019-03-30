@@ -80,18 +80,18 @@ th, td {
   width: 100%;
   line-height: 64px;
 }
-.header__nav.position-change {
+.position-change {
   position: fixed;
   top: 0;
   z-index: 100;
 }
-.header__nav.color-chnage {
+.color-chnage {
   color: #2b2b2b;
   background-color: #fff;
   border-bottom: 1px solid #a0a0a0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.header__nav .u-content {
+.header__nav .u-contentWrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -117,9 +117,9 @@ th, td {
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
-.color-chnage .header__nav__menu span,
-.color-chnage .header__nav__menu span::before,
-.color-chnage .header__nav__menu span::after {
+.color-chnage span,
+.color-chnage span::before,
+.color-chnage span::after {
   background: #2b2b2b;
 }
 .header__nav__menu span::before,
@@ -159,7 +159,7 @@ th, td {
 * * * * * * * * */
 .concept {
   width: 100%;
-  padding: 96px 0;
+  padding: 80px 0;
   background: linear-gradient(#fff 70%, #ededed 30%);
 }
 .concept__image {
@@ -171,7 +171,7 @@ th, td {
 * * * * * * * * */
 .work {
   width: 100%;
-  padding-top: 96px;
+  padding-top: 80px;
 }
 .work__contents {
   display: flex;
@@ -210,7 +210,7 @@ th, td {
 * * * * * * * * */
 .florist {
   width: 100%;
-  padding: 96px 0;
+  padding: 80px 0;
   background: linear-gradient(#ededed 50%, #fff 50%);
 }
 .florist__persons {
@@ -237,7 +237,7 @@ th, td {
 * * * * * * * * */
 .shopInformation {
   width: 100%;
-  padding-top: 96px;
+  padding-top: 80px;
 }
 .shopInformation__contents {
   display: flex;
@@ -246,7 +246,7 @@ th, td {
   margin-bottom: 180px;
 }
 .shopInformation__image {
-  width: 100%;
+  width: 50%;
 }
 .shopInformation__table {
   border-spacing: 16px;
@@ -264,7 +264,7 @@ th, td {
 * * * * * * * * */
 .contactUs {
   width: 100%;
-  padding: 96px 0;
+  padding: 80px 0;
   background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('img/contact_us.png');
   background-size: cover;
 }
