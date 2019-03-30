@@ -136,7 +136,7 @@ th, td {
   top: calc(50% + 8px);
 }
 .header__title {
-  margin-top: 160px;
+  padding-top: 160px;
   font-size: 120px;
   font-weight: normal;
 }
@@ -318,13 +318,32 @@ th, td {
 * レスポンシブ対応
 * * * * * * * * */
 @media (max-width: 670px) {
+  body {
+    font-size: 14px;
+  }
+
   .u-content {
     width: calc(100% - 32px);
     margin: 0 auto;
   }
+
+  .header {
+    height: 355px;
+    padding-top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/header.png) 50%;
+    background-size: cover;
+  }
+  .header__nav {
+    top: 0;
+  }
   .header__nav__logo {
     font-size: 24px;
   }
+  .header__title {
+    padding-top: 96px;
+    font-size: 64px;
+  }
+
   .concept__image {
     width: 100%;
   }
