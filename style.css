@@ -34,7 +34,7 @@ th, td {
 /* * * * * * * * *
 * utility
 * * * * * * * * */
-.u-content {
+.u-contentWrapper {
   max-width: 960px;
   margin: 0 auto;
 }
@@ -322,7 +322,7 @@ th, td {
     font-size: 14px;
   }
 
-  .u-content {
+  .u-contentWrapper {
     width: calc(100% - 32px);
     margin: 0 auto;
   }
