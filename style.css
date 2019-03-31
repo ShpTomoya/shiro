@@ -381,6 +381,7 @@ th, td {
   .work__contents__wrapper {
     overflow-x: auto;
     overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
   }
   .work__contents {
     display: inline-flex;
@@ -423,6 +424,7 @@ th, td {
   .florist__persons__wrapper {
     overflow-x: auto;
     overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
   }
   .florist__persons {
     display: inline-flex;
@@ -447,14 +449,9 @@ th, td {
   .shopInformation__contents {
     display: block;
   }
-  .shopInformation__image {
-    width: 100%;
-  }
+  .shopInformation__image,
   .shopInformation__table {
     width: 100%;
-  }
-  .shopInformation__table__heading {
-    width: 27%;
   }
 
   /* * * * * * * * *
