@@ -383,6 +383,19 @@ th, td {
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
   }
+  .work__contents__wrapper::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 8px;
+  }
+  .work__contents__wrapper::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.15);
+    border-radius: 8px;
+  }
+  .work__contents__wrapper::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.1);
+    border-radius: 8px;
+  }
   .work__contents {
     display: inline-flex;
     flex-direction: row;
@@ -418,13 +431,26 @@ th, td {
   * Florist
   * * * * * * * * */
   .florist {
-    padding-top: 40px;
+    padding: 40px 0;
     background: #ededed 55%;
   }
   .florist__persons__wrapper {
     overflow-x: auto;
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
+  }
+  .florist__persons__wrapper::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 8px;
+  }
+  .florist__persons__wrapper::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.15);
+    border-radius: 8px;
+  }
+  .florist__persons__wrapper::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.1);
+    border-radius: 8px;
   }
   .florist__persons {
     display: inline-flex;
