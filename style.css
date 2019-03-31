@@ -250,13 +250,14 @@ th, td {
   width: 50%;
 }
 .shopInformation__table {
+  width: 45%;
   border-spacing: 16px;
   text-align: left;
   letter-spacing: 1.5px;
   line-height: 2;
 }
 .shopInformation__table__heading {
-  width: 27%;
+  width: 25%;
   border-right: 1px solid #a0a0a0;
 }
 
@@ -402,6 +403,15 @@ th, td {
     margin-bottom: 0;
     object-fit: cover;
   }
+  .work__image__gift {
+    object-position: 0 75%;
+  }
+  .work__image__decoration {
+    object-position: 0 65%;
+  }
+  .work__image__wedding {
+    object-position: 0 60%;
+  }
 
   /* * * * * * * * *
   * Florist
@@ -439,6 +449,12 @@ th, td {
   }
   .shopInformation__image {
     width: 100%;
+  }
+  .shopInformation__table {
+    width: 100%;
+  }
+  .shopInformation__table__heading {
+    width: 27%;
   }
 
   /* * * * * * * * *
