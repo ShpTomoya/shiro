@@ -56,7 +56,7 @@ th, td {
   transform: translateX(-50%);
 }
 .u-text {
-  margin-bottom: 64px;
+  padding-bottom: 40px;
   line-height: 1.8;
   letter-spacing: 1.4px;
 }
@@ -182,7 +182,7 @@ th, td {
 }
 .work__content {
   width: 420px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   text-align: left;
   line-height: 1.8;
 }
@@ -210,8 +210,8 @@ th, td {
 * * * * * * * * */
 .florist {
   width: 100%;
-  padding: 80px 0;
-  background: linear-gradient(#ededed 50%, #fff 50%);
+  padding-top: 80px;
+  background: linear-gradient(#ededed 60%, #fff 40%);
 }
 .florist__persons {
   display: flex;
@@ -219,10 +219,12 @@ th, td {
 }
 .florist__person {
   width: 300px;
+  padding-bottom: 40px;
   text-align: left;
   line-height: 1.8;
 }
 .florist__person__image {
+  width: 100%;
   margin-bottom: 8px;
 }
 .florist__person__name {
@@ -254,7 +256,7 @@ th, td {
   line-height: 2;
 }
 .shopInformation__table__heading {
-  width: 100px;
+  width: 27%;
   border-right: 1px solid #a0a0a0;
 }
 
@@ -325,6 +327,16 @@ th, td {
     width: calc(100% - 32px);
     margin: 0 auto;
   }
+  .u-heading {
+    font-size: 28px;
+  }
+  .u-text {
+    text-align: left;
+    padding-bottom: 32px;
+  }
+  .u-display__pc {
+    display: none;
+  }
 
   .header {
     height: 355px;
@@ -333,31 +345,91 @@ th, td {
     background-size: cover;
   }
   .header__nav {
+    position: fixed;
     top: 0;
+    z-index: 100;
   }
   .header__nav__logo {
     font-size: 24px;
   }
   .header__title {
-    padding-top: 96px;
+    padding-top: 120px;
     font-size: 64px;
   }
 
-  .concept__image {
-    width: 100%;
+
+  .concept {
+    padding: 40px 0;
+    background: linear-gradient(#fff 75%, #ededed 25%);
+  }
+
+  .work {
+    padding: 40px 0 24px;
+  }
+  .work__contents__wrapper {
+    overflow-x: auto;
+    overflow-y: visible;
   }
   .work__contents {
-    display: block;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     height: auto;
   }
   .work__content {
-    width: 100%;
+    width: 85vw;
+    padding: 0 24px 40px 0;
+  }
+  .work__content:nth-of-type(2) {
+    margin-top: 0;
+  }
+  .work__content__image {
+    height: 200px;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+
+  .florist {
+    padding-top: 40px;
+    background: linear-gradient(#ededed 55%, #fff 55%);
+  }
+  .florist__persons__wrapper {
+    overflow-x: auto;
+    overflow-y: visible;
   }
   .florist__persons {
-    display: block;
+    display: inline-flex;
+  }
+  .florist__person {
+    width: 85vw;
+    padding-right: 24px;
+  }
+  .florist__person__image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .shopInformation {
+    padding: 40px 0;
   }
   .shopInformation__contents {
     display: block;
-    margin-bottom: 180px;
+  }
+  .shopInformation__image {
+    width: 100%;
+  }
+
+  .contactUs {
+    padding: 40px 0 64px;
+  }
+  .btn__contact {
+    width: 280px;
+    padding-left: 50px;
+  }
+  .btn__contact::before {
+    left: 45px;
+  }
+  .btn__contact::after {
+    left: 50px;
   }
 }
