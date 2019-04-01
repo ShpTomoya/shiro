@@ -150,7 +150,8 @@
           $('.header__nav').removeClass('color-chnage');
         }
 
-        if ($(this).scrollTop() > $('#work__desc').offset().top) {
+        let workDescTop = $('#work__desc').offset().top;
+        if ($(this).scrollTop() > (workDescTop - 50)) {
           $('.work__contents').addClass('arrow_display');
         }
       });
