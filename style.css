@@ -403,12 +403,44 @@ th, td {
     height: auto;
   }
   .work__content {
+    position: relative;
     width: 80vw;
     padding-bottom: 40px;
   }
   .work__content:not(:last-of-type) {
     margin-right: 24px;
   }
+
+  .work__content:nth-of-type(1)::before,
+  .work__content:nth-of-type(1)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #333;
+  }
+
+  .work__content:nth-of-type(1)::before {
+    bottom: 4px;
+    left: 80%;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+  }
+  .work__content:nth-of-type(1)::after {
+    bottom: 8px;
+    right: 0;
+    transform: rotate(45deg);
+    transition: .6s ease-in-out;
+  }
+
+  .arrow_display .work__content:nth-of-type(1)::before {
+    width: 60px;
+  }
+  .arrow_display .work__content:nth-of-type(1)::after {
+    width: 10px;
+  }
+
   .work__content:nth-of-type(2) {
     margin-top: 0;
   }

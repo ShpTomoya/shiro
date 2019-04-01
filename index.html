@@ -31,7 +31,7 @@
     <section class="work">
       <div class="u-contentWrapper">
         <h2 class="u-heading">Work</h2>
-        <p class="u-text">オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br class="u-display__pc">ウェディングやイベントの装花なども行なっています。<br class="u-display__pc">一人一人にあったご提案をさせていただきます。</p>
+        <p id="work__desc" class="u-text">オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br class="u-display__pc">ウェディングやイベントの装花なども行なっています。<br class="u-display__pc">一人一人にあったご提案をさせていただきます。</p>
         <div class="work__contents__wrapper">
           <div class="work__contents">
             <div class="work__content">
@@ -149,7 +149,12 @@
         } else {
           $('.header__nav').removeClass('color-chnage');
         }
+
+        if ($(this).scrollTop() > $('#work__desc').offset().top) {
+          $('.work__contents').addClass('arrow_display');
+        }
       });
+
     });
     </script>
   </body>
