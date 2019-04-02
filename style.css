@@ -422,13 +422,13 @@ th, td {
   }
 
   .work::before {
-    bottom: 28px;
+    bottom: 26px;
     left: 79%;
     overflow: hidden;
     transition: .3s ease-in-out;
   }
   .work::after {
-    bottom: 32px;
+    bottom: 30px;
     right: 5%;
     transform: rotate(45deg);
     transition: .9s ease-in-out;
