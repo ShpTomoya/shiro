@@ -9,12 +9,20 @@
   <body>
     <header class="header">
       <div class="header__nav">
-        <div class="u-contentWrapper">
+        <div class="u-contentWrapper header__nav__wrapper">
           <div class="header__nav__logo">Shiro</div>
-          <div class="header__nav__menu">
-            <span></span>
+          <div class="hamburger-menu">
+            <span class="hamburger-menu__line"></span>
+            <span class="hamburger-menu__line--dummy"></span>
           </div>
         </div>
+        <ul class="header-menu">
+          <li class="header__menu__item"><a href="#">Concept</a></li>
+          <li class="header__menu__item"><a href="#">Work</a></li>
+          <li class="header__menu__item"><a href="#">Florist</a></li>
+          <li class="header__menu__item"><a href="#">Shop information</a></li>
+          <li class="header__menu__item"><a href="#">Contact us</a></li>
+        </ul>
       </div>
       <div class="u-contentWrapper">
         <h1 class="header__title">Shiro</h1>
@@ -154,6 +162,16 @@
         if ($(this).scrollTop() > (workDescTop - 50)) {
           $('.work').addClass('arrow_display');
         }
+      });
+
+      /*** ハンバーガーメニューの表示/非表示 ***/
+      $('.hamburger-menu').on('click', function() {
+        $('.hamburger-menu').toggleClass('active');
+        $('.header-menu').toggleClass('height-change');
+      });
+      $('.header__menu__item').on('click', function() {
+        $('.hamburger-menu').removeClass('active');
+        $('.header-menu').toggleClass('height-change');
       });
 
     });
