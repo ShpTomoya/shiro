@@ -390,7 +390,7 @@ li {
   /* * * * * * * * *
   * utility
   * * * * * * * * */
-  .u-contentWrapper {
+  .u-content-wrapper {
     width: calc(100% - 32px);
     margin: 0 auto;
   }
